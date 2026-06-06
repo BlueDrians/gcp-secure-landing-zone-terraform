@@ -19,3 +19,29 @@ crash.*.log
 *.key
 credentials.json
 service-account.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Terraform plan/output
+*.tfplan
+tfplan
+plan.out
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Additional secret formats
+*.p12
+*.pfx
+*.keystore
+*.jks
