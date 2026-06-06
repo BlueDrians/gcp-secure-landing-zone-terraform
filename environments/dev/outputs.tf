@@ -9,11 +9,11 @@ output "subnet_name" {
 }
 
 output "workload_service_account_email" {
-  description = "Service account for workload runtime identity."
+  description = "Service account for workload runtime identity"
   value       = module.iam.workload_service_account_email
 }
 
 output "log_dataset_id" {
-  description = "BigQuery dataset used for log sink destination."
+  description = "BigQuery dataset used for log sink destination"
   value       = module.logging.dataset_id
 }
