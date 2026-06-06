@@ -45,12 +45,12 @@ flowchart LR
 
 | Decision | Reason |
 |---|---|
-| Existing project approach | Easier for lab and portofolio usage without requiring organization/folder access. |
-| Custom VPC | Avoids default VPC exposure and supports controlled subnetting. |
-| Private Google Access | Lets private resources access Google APIs without external IP dependency. |
-| Cloud NAT | Provides outbound internet access without assigning public IPs to workloads. |
-| BigQuery log sink | Supports audit analysis and query-based investigation. |
-| Budget module | Adds basic cost control for lab and customer demo usage. |
+| Existing project approach | Easier for lab and portofolio usage without requiring organization/folder access |
+| Custom VPC | Avoids default VPC exposure and supports controlled subnetting |
+| Private Google Access | Lets private resources access Google APIs without external IP dependency |
+| Cloud NAT | Provides outbound internet access without assigning public IPs to workloads |
+| BigQuery log sink | Supports audit analysis and query-based investigation |
+| Budget module | Adds basic cost control for lab and customer demo usage |
 
 ## Limitations
 
