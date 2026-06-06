@@ -6,12 +6,12 @@ This project creates a foundational Google Cloud landing zone for one environmen
 
 ## Design Goals
 
-1. Provide a repeatable Infrastructure as Code baseline.
-2. Reduce security risk from default network exposure.
-3. Enable private workload egress using Cloud NAT.
-4. Centralize relevant audit and error logs.
-5. Provide basic operational visibility.
-6. Add simple budget governance.
+1. Provide a repeatable Infrastructure as Code baseline
+2. Reduce security risk from default network exposure
+3. Enable private workload egress using Cloud NAT
+4. Centralize relevant audit and error logs
+5. Provide basic operational visibility
+6. Add simple budget governance
 
 ## Logical Architecture
 
