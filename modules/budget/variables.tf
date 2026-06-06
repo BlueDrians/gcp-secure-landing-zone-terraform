@@ -15,6 +15,6 @@ variable "budget_amount" {
 }
 
 variable "notification_email_address" {
-  description = "Email address documented as the budget notification owner."
+  description = "Email address documented as the budget notification owner"
   type        = string
 }
