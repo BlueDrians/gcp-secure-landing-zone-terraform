@@ -1,0 +1,38 @@
+name: Terraform Check
+
+on:
+  pull_request:
+    paths:
+      - "**/*.tf"
+      - ".github/workflows/terraform-check.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.tf"
+      - ".github/workflows/terraform-check.yml"
+
+jobs:
+  terraform-check:
+    name: Terraform Format Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.8.5
+
+      - name: Terraform Format
+        run: terraform fmt -recursive -check
+
+      - name: Terraform Init Without Backend
+        working-directory: environments/dev
+        run: terraform init -backend=false
+
+      - name: Terraform Validate
+        working-directory: environments/dev
+        run: terraform validate

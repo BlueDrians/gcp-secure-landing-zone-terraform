@@ -1,0 +1,18 @@
+project_id                 = "gcp-project-id"
+region                     = "asia-southeast2"
+environment                = "dev"
+owner                      = "adrian"
+
+vpc_name                   = "lz-vpc"
+subnet_name                = "lz-private-subnet"
+subnet_cidr                = "10.10.0.0/24"
+allowed_admin_cidr         = "PUBLIC_OR_VPN_CIDR/32"
+
+admin_group_email          = "gcp-admins@example.com"
+
+log_dataset_id             = "audit_logs"
+log_retention_days         = 30
+
+billing_account_id         = "000000-000000-000000"
+budget_amount              = 50
+notification_email_address = "email@example.com"

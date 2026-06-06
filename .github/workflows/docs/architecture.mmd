@@ -1,0 +1,29 @@
+flowchart TB
+    User[Cloud Admin / Platform Engineer]
+    TF[Terraform CLI / CI Pipeline]
+    GCP[Google Cloud Project]
+
+    subgraph GCP[Google Cloud Landing Zone]
+        VPC[Custom VPC]
+        SUBNET[Private Subnet - Private Google Access]
+        NAT[Cloud Router + Cloud NAT]
+        FW[Firewall Rules]
+        SA[Workload Service Account]
+        IAM[IAM Bindings]
+        LOG[Log Sink]
+        BQ[BigQuery Audit Dataset]
+        MON[Cloud Monitoring Alert Policy]
+        BUD[Budget Alert]
+    end
+
+    User --> TF
+    TF --> VPC
+    VPC --> SUBNET
+    SUBNET --> NAT
+    VPC --> FW
+    TF --> SA
+    TF --> IAM
+    TF --> LOG
+    LOG --> BQ
+    TF --> MON
+    TF --> BUD
