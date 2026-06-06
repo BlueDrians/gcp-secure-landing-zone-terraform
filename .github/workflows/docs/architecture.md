@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project creates a foundational Google Cloud landing zone for one environment. It is intentionally simple so it can be used as a portfolio project, customer demo, or presales accelerator.
+This project creates a foundational Google Cloud landing zone for one environment. It is intentionally simple so it can be used as a portofolio project, customer demo, or presales accelerator
 
 ## Design Goals
 
