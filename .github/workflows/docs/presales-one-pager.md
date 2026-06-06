@@ -2,19 +2,19 @@
 
 ## Customer Challenge
 
-The customer wants to adopt Google Cloud but needs a secure, repeatable, and governed foundation before deploying production workloads.
+The customer wants to adopt Google Cloud but needs a secure, repeatable, and governed foundation before deploying production workloads
 
 ## Proposed Solution
 
-Implement a Google Cloud landing zone baseline using Terraform. The solution includes secure networking, access control, centralized logging, monitoring alerts, and budget guardrails.
+Implement a Google Cloud landing zone baseline using Terraform. The solution includes secure networking, access control, centralized logging, monitoring alerts, and budget guardrails
 
 ## Business Value
 
-- Faster cloud adoption through reusable baseline automation.
-- Reduced misconfiguration risk through standardized network and IAM patterns.
-- Better audit readiness through centralized logging.
-- Improved operational visibility with monitoring alerts.
-- Better cost control through monthly budget thresholds.
+- Faster cloud adoption through reusable baseline automation
+- Reduced misconfiguration risk through standardized network and IAM patterns
+- Better audit readiness through centralized logging
+- Improved operational visibility with monitoring alerts
+- Better cost control through monthly budget thresholds
 
 ## Technical Scope
 
@@ -29,10 +29,10 @@ Implement a Google Cloud landing zone baseline using Terraform. The solution inc
 
 ## Assumptions
 
-- Customer already has Google Cloud organization and billing account.
-- Initial implementation targets one project and one environment.
-- Customer provides admin group email and approved admin CIDR.
-- Production hardening can be added in later phases.
+- Customer already has Google Cloud organization and billing account
+- Initial implementation targets one project and one environment
+- Customer provides admin group email and approved admin CIDR
+- Production hardening can be added in later phases
 
 ## Suggested Implementation Timeline
 
