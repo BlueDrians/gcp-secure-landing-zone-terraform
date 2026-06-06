@@ -40,7 +40,7 @@ variable "subnet_cidr" {
 }
 
 variable "allowed_admin_cidr" {
-  description = "CIDR allowed to access administrative ports. Use a specific corporate/VPN IP range, not 0.0.0.0/0."
+  description = "CIDR allowed to access administrative ports. Use a specific corporate/VPN IP range, not 0.0.0.0/0"
   type        = string
   default     = "10.0.0.0/8"
 }
@@ -51,13 +51,13 @@ variable "admin_group_email" {
 }
 
 variable "log_dataset_id" {
-  description = "BigQuery dataset ID for centralized project logs."
+  description = "BigQuery dataset ID for centralized project logs"
   type        = string
   default     = "audit_logs"
 }
 
 variable "log_retention_days" {
-  description = "BigQuery table expiration in days for log storage."
+  description = "BigQuery table expiration in days for log storage"
   type        = number
   default     = 30
 }
@@ -68,12 +68,12 @@ variable "billing_account_id" {
 }
 
 variable "budget_amount" {
-  description = "Budget amount in USD for lab or dev environment."
+  description = "Budget amount in USD for lab or dev environment"
   type        = number
   default     = 50
 }
 
 variable "notification_email_address" {
-  description = "Email address used by monitoring and budget documentation. Budget notifications usually require Cloud Monitoring notification channels or billing IAM setup."
+  description = "Email address used by monitoring and budget documentation. Budget notifications usually require Cloud Monitoring notification channels or billing IAM setup"
   type        = string
 }
